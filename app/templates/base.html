@@ -1,0 +1,17 @@
+<!--base.html -->
+<html>
+    <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+      <title>{{ title }} - My To-Do List</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <ul>
+          <li><a href="/">Home</a></li>
+        </ul>
+        <hr>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
+
